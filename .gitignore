@@ -1,1 +1,6 @@
 .venv
+
+# Makefile backups and temporary files
+setup.cfg.backup
+settings_incomplete.conf
+test_files/
