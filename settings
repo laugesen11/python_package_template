@@ -1,0 +1,8 @@
+# Settings file for Python package template
+# Define the required macros for setup.cfg configuration
+
+PACKAGE_NAME = awesome_python_tool
+AUTHOR_NAME = Jane Smith
+AUTHOR_EMAIL = jane.smith@company.com
+GIT_URL = https://github.com/company/awesome_python_tool
+DESCRIPTION = An awesome Python tool for doing amazing things

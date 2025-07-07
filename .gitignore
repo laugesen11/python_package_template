@@ -1,1 +1,4 @@
 .venv
+# Makefile backup files
+*.bak
+*.tmp
