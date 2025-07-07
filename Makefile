@@ -7,6 +7,10 @@ include settings
 # Define required macros for validation
 REQUIRED_VARS := PACKAGE_NAME AUTHOR_NAME AUTHOR_EMAIL GIT_URL DESCRIPTION
 
+# Default target
+.PHONY: default
+default: help
+
 # Check that all required variables are defined
 .PHONY: check-vars
 check-vars:
