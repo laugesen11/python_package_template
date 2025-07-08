@@ -2,14 +2,15 @@
 # This Makefile reads settings and updates setup.cfg with sed commands
 
 # Include the settings file
-include settings
+include config.proj
 
 # Define required macros for validation
 REQUIRED_VARS := PACKAGE_NAME AUTHOR_NAME AUTHOR_EMAIL GIT_URL DESCRIPTION
 
 # Default target
 .PHONY: default
-default: help
+default: update-setup
+
 
 # Check that all required variables are defined
 .PHONY: check-vars
@@ -40,6 +41,8 @@ update-setup: check-vars
 	rm -f setup.cfg.tmp
 	@echo "setup.cfg has been updated successfully."
 	@echo "Original file backed up as setup.cfg.bak"
+	@echo "Deleting .git directory"
+	rm -rf .git
 
 # Show current values
 .PHONY: show-vars

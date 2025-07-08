@@ -2,3 +2,4 @@
 # Makefile backup files
 *.bak
 *.tmp
+config.proj
