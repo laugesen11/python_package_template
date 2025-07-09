@@ -41,8 +41,8 @@ update-setup: check-vars
 	rm -f setup.cfg.tmp
 	@echo "setup.cfg has been updated successfully."
 	@echo "Original file backed up as setup.cfg.bak"
-	@echo "Deleting .git directory"
-	rm -rf .git
+	@echo "Deleting .git directory and configure.sh script"
+	rm -rf .git configure.sh
 
 # Show current values
 .PHONY: show-vars
