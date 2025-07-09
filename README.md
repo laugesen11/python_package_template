@@ -43,7 +43,9 @@ chmod +x configure.sh
 ### 3. Make and deploy the package
 
 **This command will remove the .git directory and the configure.sh script**
+```bash
 make
+```
 ---
 
 ## Setting Up Your Development Environment
